@@ -21,7 +21,7 @@
 		</span>
 
 		<br>
-		Welcome to your new<br />SvelteKit app
+		Cultive ta santé<br />et la Vertu suivra.
 	</h1>
 
 	<h2>
