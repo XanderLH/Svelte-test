@@ -1,7 +1,7 @@
 <script>
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/Begaudeau.webp';
-	import welcome_fallback from '$lib/images/Bégaudeau.gif';
+	import welcome_fallback from '$lib/images/Begaudeau.gif';
 </script>
 
 <svelte:head>
