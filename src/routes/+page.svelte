@@ -1,7 +1,7 @@
 <script>
 	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import welcome from '$lib/images/Begaudeau.webp';
+	import welcome_fallback from '$lib/images/Bégaudeau.gif';
 </script>
 
 <svelte:head>
@@ -11,14 +11,17 @@
 
 <section>
 	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
+		<span class="Booo">
+			<center>
+				<picture>
+					<source srcset={welcome} type="image/webp" />
+					<img src={welcome_fallback} alt="Welcome" />
+				</picture>
+			</center>
 		</span>
 
-		to your new<br />SvelteKit app
+		<br>
+		Welcome to your new<br />SvelteKit app
 	</h1>
 
 	<h2>

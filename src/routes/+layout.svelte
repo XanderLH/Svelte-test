@@ -13,7 +13,7 @@
 
   <footer>
     <p>
-      visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit
+      visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> ca marche
     </p>
   </footer>
 </div>
