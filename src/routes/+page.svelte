@@ -15,23 +15,29 @@
 	<h1>
 		<span class="Booo">
 			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
+				<source srcset={welcome} type="image/webp"   style="width: 388px; height: 225px; object-fit: cover; object-position: 100% 100%;"/>
+				<img src={welcome_fallback} alt="Welcome"   style="width: 388px; height: 225px; object-fit: cover; object-position: 100% 100%;"/>
 			</picture>
 		</span>
 		<span class="Super">
 			<picture>
-				<source srcset={nietzsche} type="image/webp" />
-				<img src={nietzsche_fallback} alt="Welcome" />
+				<source srcset={nietzsche} type="image/webp" style="width: 380px; height: 413px; object-fit: cover; object-position: 100% 100%;"/>
+				<img src={nietzsche_fallback} alt="Welcome" style="width: 380px; height: 413px; object-fit: cover; object-position: 100% 100%;"/>
 			</picture>
 		</span>
 
 		<br>
-		Cultive ta santé<br />et la Vertu suivra.
+		Cultive ta Santé,<br />et la Vertu suivra.
 	</h1>
-
+<br/>
+<br/>
+	<center>
 	<h2>
+		Temps écoulé avant le <br />prochain retour de cet instant<br /> que tu es en train de vivre :
 	</h2>
+	<br/>
+	<h3>~57x10^4946 jours</h3>
+	</center>
 
 	<Counter />
 </section>

@@ -17,13 +17,13 @@
 		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Accueil</a>
+				<a href="/" style="color: lemonchiffon;">Accueil</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">Ta bêtise</a>
+				<a href="/about" style="color:lemonchiffon;">Ta bêtise</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Notre joie</a>
+				<a href="/sverdle" style="color: lemonchiffon;">Notre joie</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -66,7 +66,7 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(77, 255, 0, 0.7);
+		--background: rgba(50, 45, 202, 0.7);
 	}
 
 	svg {

@@ -13,7 +13,7 @@
 
   <footer>
     <p>
-      visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> ca marche
+      visit <a href="https://kit.svelte.dev">destroytheworld.dev</a>
     </p>
   </footer>
 </div>
