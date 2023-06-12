@@ -2,6 +2,8 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/Begaudeau.webp';
 	import welcome_fallback from '$lib/images/Begaudeau.gif';
+	import nietzsche from '$lib/images/Nietzsche.webp';
+	import nietzsche_fallback from '$lib/images/Nietzsche.gif';
 </script>
 
 <svelte:head>
@@ -12,12 +14,16 @@
 <section>
 	<h1>
 		<span class="Booo">
-			<center>
-				<picture>
-					<source srcset={welcome} type="image/webp" />
-					<img src={welcome_fallback} alt="Welcome" />
-				</picture>
-			</center>
+			<picture>
+				<source srcset={welcome} type="image/webp" />
+				<img src={welcome_fallback} alt="Welcome" />
+			</picture>
+		</span>
+		<span class="Super">
+			<picture>
+				<source srcset={nietzsche} type="image/webp" />
+				<img src={nietzsche_fallback} alt="Welcome" />
+			</picture>
 		</span>
 
 		<br>

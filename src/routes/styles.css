@@ -105,3 +105,17 @@ button:focus:not(:focus-visible) {
 	width: 1px;
 	white-space: nowrap;
 }
+
+.Booo {
+	width: 300px;
+	position: fixed;
+	top: 180px;
+	left: 100px;
+  }
+
+.Super {
+	width: 300px;
+	position: fixed;
+	top: 100px;
+	right: 100px;
+  }
