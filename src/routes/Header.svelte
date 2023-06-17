@@ -12,7 +12,7 @@
 	</div>
 
 	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
+		<svg viewBox="0 0 1 3" aria-hidden="true">
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
 		<ul>
@@ -24,6 +24,9 @@
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
 				<a href="/sverdle" style="color: lemonchiffon;">Notre joie</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/donate' ? 'page' : undefined}>
+				<a href="/donate" style="color: lemonchiffon;">Dons</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
