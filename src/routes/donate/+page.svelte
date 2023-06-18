@@ -1,5 +1,5 @@
 <script>
-    import { supabase } from "../../supabaseClient";
+    import { supabase } from "../../supabase";
 
     let apiResult = null;
 
