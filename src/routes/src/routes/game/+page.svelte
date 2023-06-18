@@ -1,9 +1,8 @@
 <script>
-    import { supabase } from "$lib/supabaseClient";
+    import { supabase } from "../../../supabase";
     let playerChoice = "";
     let computerChoice = "";
     let result = "";
-  
     const choices = ["Rock", "Paper", "Scissors"];
   
     async function playGame(choice) {
