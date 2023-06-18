@@ -1,93 +1,69 @@
-<script>
-    import { supabase } from "../supabaseClient";
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Range Input</title>
+  </head>
+  <body id='donations'>
+    <section id="overlay">
+      <img src="src\lib\images\Capture d'écran 2023-06-18 184132.png" alt="Davie's Burgers Logo" id="logo">
+      <br>
+      <form id='formulaire'>
+        <h1>L'argent n'a pas de valeur réelle, alors donnez-le nous !</h1>
+        <br>
+        <br>
+				<section class="name">
+          <label for="name">Nom</label>
+          <br>
+          <br>
 
-    import { createForm } from "svelte-forms-lib";
-    import * as yup from "yup";
+    			<input type="text" name="name" id="name">
+        </section>
+        <br>
+        <br>
 
-    import { TextInput, TextArea, Button, FormGroup, Form, InlineNotification } from "carbon-components-svelte";
+        <section class="email">
+          <label for="email">Email</label>
+          <br>
+          <br>
+          <input type="email" name="email" id="email">
+					
+          
+        </section>
+        <br>
+        <br>
 
-    const validationSchema = yup.object().shape({
-        name: yup.string().required('Please enter a name'),
-        email: yup.string().email().required('Please enter a valid email'),
-        message: yup.string().required('Please enter a message')
-    });
-
-    let apiResult = null;
-
-    const { form, errors, handleChange, handleSubmit, isSubmitting, handleReset } = createForm({
-        initialValues: { name: "", email: "", message: "" },
-        validationSchema: validationSchema,
-        onSubmit: async values => {
-
-            try {
-                var result = await supabase.from("Contact").insert(values);
-
-                if (result.data != null) {
-                    apiResult = true;
-                } else {
-                    apiResult = false;
-                }
-
-            } catch (ex) {
-                apiResult = false;
-            }
-
-            handleReset();
-      }
-    });
-
-</script>
-
-<div class="page">
-
-    <h2>Contact Us</h2>
-    <p>Enter the details to get in touch with us. You can remove your email at any time after this.</p> <br/><br/>
-
-    {#if apiResult != null}
-
-        {#if apiResult == true}
-        <InlineNotification
-            lowContrast
-            kind="success"
-            title="Success:"
-            subtitle="Your message has been received"
-        />
-        {:else}
-        <InlineNotification lowContrast kind="error"
-            title="Error:"
-            subtitle="An internal server error occurred."
-        />
-
-        {/if}    
-    {/if}
-    <Form on:submit={handleSubmit}>
-
-        <FormGroup>
-            <TextInput labelText="Name" name="name" 
-                on:change={handleChange} bind:value={$form.name}
-                invalid={$errors.name.length > 0} invalidText={$errors.name}/>
-        </FormGroup>
-
-        <FormGroup>
-            <TextInput labelText="Email" name="email" type="email" 
-                on:change={handleChange} bind:value={$form.email}
-                invalid={$errors.email.length > 0} invalidText={$errors.email}/>
-        </FormGroup>
+        <section class="don">
+            <label for="don">Donate</label>
+            <br>
+            <br>
+            <input type="number" name="don" id="don" step='10'>
+                      
+            
+          </section>
+          <br>
+        <br>
+        <section class='submission'>
+        <input type="submit" id="bt" value="Save data to file" onclick="saveFile()">
+    </section>
+  
 
 
-        <FormGroup>
-            <TextArea labelText="Message" name="message" type="textarea"
-                on:change={handleChange} bind:value={$form.message}
-                invalid={$errors.message.length > 0} invalidText={$errors.message}/>
-        </FormGroup>
-
-
-        <Button type="submit" disabled={$isSubmitting}>Submit</Button>
-    </Form>
-</div>
+      </form>
+    </section>
+  </body>
+</html>
 
 <style>
-    .page {
-        margin: 40px;
-    }
+
+    #logo{
+	width: 400px;
+	position: relative;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 200px
+}
+
 </style>

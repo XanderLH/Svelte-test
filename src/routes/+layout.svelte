@@ -57,4 +57,9 @@
       padding: 12px 0;
     }
   }
+
+  a:hover{
+	color: darkorange;
+}
+
 </style>

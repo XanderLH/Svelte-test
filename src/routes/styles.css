@@ -141,3 +141,31 @@ button:focus:not(:focus-visible) {
 a:hover{
 	color: darkorange;
 }
+
+
+
+form{
+	width: 400px;
+	text-align: center;
+	position: relative;
+	top: 100px;
+	left: 300px;
+	object-position: -10px;
+}
+#decadent{
+	width: 100px;
+	position: relative;
+	left: 17px;
+}
+
+#bt{
+	background-color: rgba(212, 212, 212, 0.45);
+	border-radius: 3px;
+	width: 120px;
+	height: 30px;
+}
+
+#bt:hover{
+	color: rgb(64, 61, 58);
+	background-color: rgba(151, 162, 206, 0.45);
+}
