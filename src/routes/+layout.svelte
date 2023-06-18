@@ -2,7 +2,7 @@
   import "../app.postcss";
   import Header from "./Header.svelte";
   import "./styles.css";
-  import { supabase } from "./supabase";
+  import { supabase } from "./supabaseClient";
   console.log(supabase);
     import "carbon-components-svelte/css/g10.css";
 
