@@ -137,3 +137,7 @@ button:focus:not(:focus-visible) {
 	top: 70px;
 	right: 50px;
   }
+
+a:hover{
+	color: darkorange;
+}
