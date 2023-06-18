@@ -1,5 +1,5 @@
 <script>
-    import { supabase } from "../../supabaseClient";
+    import { supabase } from "../supabase";
 
     import { createForm } from "svelte-forms-lib";
     import * as yup from "yup";
