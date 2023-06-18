@@ -2,6 +2,8 @@
   import "../app.postcss";
   import Header from "./Header.svelte";
   import "./styles.css";
+    import { supabase } from "./supabase";
+  console.log(supabase);
 </script>
 
 <div class="app">

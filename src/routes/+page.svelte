@@ -1,5 +1,4 @@
 <script>
-	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/Begaudeau.webp';
 	import welcome_fallback from '$lib/images/Begaudeau.gif';
 	import nietzsche from '$lib/images/Nietzsche.webp';
@@ -39,7 +38,6 @@
 	<h3>~57x10^4946 jours</h3>
 	</center>
 
-	<Counter />
 </section>
 
 <style>
