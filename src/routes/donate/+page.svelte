@@ -1,7 +1,4 @@
 <script>
-    import { supabase } from "../supabase";
-
-    let apiResult = null;
 
     import { TextInput, TextArea, Button, FormGroup, Form } from "carbon-components-svelte";
         import { createForm } from "svelte-forms-lib";
@@ -9,24 +6,12 @@
     const { form, errors, handleChange, handleSubmit, isSubmitting } = createForm({
         initialValues: { name: "", email: "", message: "" },
         onSubmit: async values => {
-            try {
-                var result = await supabase.from("Contact").insert(values);
-
-                if (result.data != null) {
-                    apiResult = true;
-                } else {
-                    apiResult = false;
-                }
-
-            } catch (ex) {
-                apiResult = false;
-            }
-
-            handleReset();
+            console.log(result);
       }
     });
 
 </script>
+
 <div class="page">
 
     <h2>Contact Us</h2>
@@ -54,3 +39,29 @@
     </Form>
 </div>
 
+<script>
+    import { supabase } from "../../supabaseClient";
+
+        let apiResult = null;
+
+    const { form, errors, handleChange, handleSubmit, isSubmitting, handleReset } = createForm({
+        initialValues: { name: "", email: "", message: "" },
+        onSubmit: async values => {
+
+            try {
+                var result = await supabase.from("contact").insert(values);
+
+                if (result.data != null) {
+                    apiResult = true;
+                } else {
+                    apiResult = false;
+                }
+
+            } catch (ex) {
+                apiResult = false;
+            }
+
+            handleReset();
+      }
+    });
+</script>
