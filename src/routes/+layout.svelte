@@ -2,9 +2,6 @@
   import "../app.postcss";
   import Header from "./Header.svelte";
   import "./styles.css";
-  import { supabase } from "./supabaseClient";
-  console.log(supabase);
-    import "carbon-components-svelte/css/g10.css";
 
 </script>
 
@@ -15,11 +12,6 @@
     <slot />
   </main>
 
-  <footer>
-    <p>
-      visit <a href="https://kit.svelte.dev">destroytheworld.dev</a>
-    </p>
-  </footer>
 </div>
 
 <style>
