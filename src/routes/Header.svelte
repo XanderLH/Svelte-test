@@ -28,6 +28,10 @@
 			<li aria-current={$page.url.pathname === '/donate' ? 'page' : undefined}>
 				<a href="/donate" style="color: lemonchiffon;">Dons</a>
 			</li>
+			<li aria-current={$page.url.pathname === '/demo' ? 'page' : undefined}>
+				<a href="/demo" style="color: lemonchiffon;">Terreur existentielle</a>
+			</li>
+
 			
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
