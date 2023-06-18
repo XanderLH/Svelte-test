@@ -1,3 +1,8 @@
+<script>
+	import pnf from '$lib/images/PNF.png';
+</script>
+
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -7,7 +12,7 @@
   </head>
   <body id='donations'>
     <section id="overlay">
-      <img src="src\lib\images\PNF.png" alt="Davie's Burgers Logo" id="logo">
+      <img src={pnf} alt="Davie's Burgers Logo" id="logo">
       <br>
       <form id='formulaire'>
         <h1>L'argent n'a pas de valeur réelle, alors donnez-le nous !</h1>
