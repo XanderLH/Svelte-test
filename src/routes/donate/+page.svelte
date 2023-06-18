@@ -1,4 +1,7 @@
 <script>
+    import { supabase } from "../../supabaseClient";
+
+    let apiResult = null;
 
     import { TextInput, TextArea, Button, FormGroup, Form } from "carbon-components-svelte";
         import { createForm } from "svelte-forms-lib";
@@ -6,7 +9,20 @@
     const { form, errors, handleChange, handleSubmit, isSubmitting } = createForm({
         initialValues: { name: "", email: "", message: "" },
         onSubmit: async values => {
-            console.log(result);
+            try {
+                var result = await supabase.from("contact").insert(values);
+
+                if (result.data != null) {
+                    apiResult = true;
+                } else {
+                    apiResult = false;
+                }
+
+            } catch (ex) {
+                apiResult = false;
+            }
+
+            handleReset();
       }
     });
 
