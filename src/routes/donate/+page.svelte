@@ -10,7 +10,7 @@
         initialValues: { name: "", email: "", message: "" },
         onSubmit: async values => {
             try {
-                var result = await supabase.from("contact").insert(values);
+                var result = await supabase.from("Contact").insert(values);
 
                 if (result.data != null) {
                     apiResult = true;
