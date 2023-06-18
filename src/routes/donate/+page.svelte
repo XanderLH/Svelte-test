@@ -7,7 +7,7 @@
   </head>
   <body id='donations'>
     <section id="overlay">
-      <img src="src\lib\images\Capture d'écran 2023-06-18 184132.png" alt="Davie's Burgers Logo" id="logo">
+      <img src="src\lib\images\PNF.png" alt="Davie's Burgers Logo" id="logo">
       <br>
       <form id='formulaire'>
         <h1>L'argent n'a pas de valeur réelle, alors donnez-le nous !</h1>
