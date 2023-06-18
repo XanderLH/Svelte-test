@@ -1,16 +1,40 @@
 <script>
-    import { supabase } from "../supabase";
 
- 
-    console.log(supabase);
+    import { TextInput, TextArea, Button, FormGroup, Form } from "carbon-components-svelte";
+        import { createForm } from "svelte-forms-lib";
+
+    const { form, errors, handleChange, handleSubmit, isSubmitting } = createForm({
+        initialValues: { name: "", email: "", message: "" },
+        onSubmit: async values => {
+            console.log(result);
+      }
+    });
+
 </script>
+<div class="page">
 
-<div class="content">
-    
+    <h2>Contact Us</h2>
+    <p>Enter the details to get in touch with us. You can remove your email at any time after this.</p> <br/><br/>
 
-    <slot>
-        
+    <Form on:submit={handleSubmit}>
 
-    </slot>
+        <FormGroup>
+            <TextInput labelText="Name" name="name" 
+                on:change={handleChange} bind:value={$form.name}/>
+        </FormGroup>
+
+        <FormGroup>
+            <TextInput labelText="Email" name="email" type="email" 
+            on:change={handleChange} bind:value={$form.email}/>
+        </FormGroup>
+
+
+        <FormGroup>
+            <TextArea labelText="Message" name="message" type="textarea"
+            on:change={handleChange} bind:value={$form.message}/>
+        </FormGroup>
+
+        <Button type="submit" disabled={$isSubmitting}>Submit</Button>
+    </Form>
 </div>
 
