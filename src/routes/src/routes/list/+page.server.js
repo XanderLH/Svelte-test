@@ -1,4 +1,4 @@
-import { supabase } from "$lib/supabaseClient";
+import { supabase } from "../../../supabase";
 
   export async function load() {
     const { data } = await supabase.from("games").select();
