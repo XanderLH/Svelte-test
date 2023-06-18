@@ -1,12 +1,14 @@
 <script>
 	import { page } from '$app/stores';
 	import github from '$lib/images/github.svg';
+	import pnf from '$lib/images/PNF.png';
+
 </script>
 
 <header>
 	<div class="corner">
 		<a href="/">
-			<img src="src\lib\images\PNF.png" alt="SvelteKit" id="decadent"/>
+			<img src={pnf} alt="SvelteKit" id="decadent"/>
 		</a>
 	</div>
 
