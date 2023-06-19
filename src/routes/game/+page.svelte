@@ -197,7 +197,7 @@ if (score>18) {
         {personality}
     </div>
     <div class="answer">
-        <img src={photo}>
+        <img src={photo} alt="">
     </div>
     <div class="description">
         {resume}
