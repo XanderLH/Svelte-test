@@ -22,7 +22,7 @@
   </head>
   <body id='donations'>
     <section id="overlay">
-      <img src={pnf} alt="Davie's Burgers Logo" id="logo">
+      <img src={pnf} alt="PNFlogo" id="logo">
       <br>
       <form id='formulaire'>
         <h1>L'argent n'a pas de valeur réelle, alors donnez-le nous !</h1>
@@ -153,6 +153,8 @@ h9 {
     top: -50px
 }
 
-
+label {
+    color: white;
+}
 
 </style>

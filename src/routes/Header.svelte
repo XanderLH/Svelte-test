@@ -22,8 +22,8 @@
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about" style="color:lemonchiffon;">Ta bêtise</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle" style="color: lemonchiffon;">Quiz</a>
+			<li aria-current={$page.url.pathname === '/game' ? 'page' : undefined}>
+				<a href="/game" style="color: lemonchiffon;">Quiz</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/donate' ? 'page' : undefined}>
 				<a href="/donate" style="color: lemonchiffon;">Faites un don !</a>
