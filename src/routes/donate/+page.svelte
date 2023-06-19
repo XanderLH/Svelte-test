@@ -28,11 +28,11 @@
         <h1>L'argent n'a pas de valeur réelle, alors donnez-le nous !</h1>
         <div class="container1">
         <h6>{donations}</h6>
-        <h7>donations have already been made</h7>
+        <h7>dons nous ont déjà été faits</h7>
     </div>
     <div class="container2">
         <h8>{money}€</h8>
-        <h9>have been donated</h9>
+        <h9>ont déjà été donnés</h9>
     </div>
 
         <br>
