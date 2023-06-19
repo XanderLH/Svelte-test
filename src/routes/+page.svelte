@@ -1,8 +1,6 @@
 <script>
-	import welcome from '$lib/images/Begaudeau.webp';
-	import welcome_fallback from '$lib/images/Begaudeau.gif';
-	import nietzsche from '$lib/images/Nietzsche.webp';
-	import nietzsche_fallback from '$lib/images/Nietzsche.gif';
+	import pnf from '$lib/images/PNF.png';
+
 </script>
 
 <svelte:head>
@@ -13,31 +11,41 @@
 
 
 <section>
-	<h1>
-		<span class="Booo">
-			<picture>
-				<source srcset={welcome} type="image/webp"   style="width: 388px; height: 225px; object-fit: cover; object-position: 100% 100%;"/>
-				<img src={welcome_fallback} alt="Welcome"   style="width: 388px; height: 225px; object-fit: cover; object-position: 100% 100%;"/>
-			</picture>
-		</span>
-		<span class="Super">
-			<picture>
-				<source srcset={nietzsche} type="image/webp" style="width: 380px; height: 413px; object-fit: cover; object-position: 100% 100%;"/>
-				<img src={nietzsche_fallback} alt="Welcome" style="width: 380px; height: 413px; object-fit: cover; object-position: 100% 100%;"/>
-			</picture>
-		</span>
-
-		<br>
-		Cultive ta Santé,<br />et la Vertu suivra.
-	</h1>
-<br/>
+	<br>
+	<img src={pnf} alt="PNFlogo" id="logo">
+	<br/>
 <br/>
 	<center>
-	<h2>
-		Temps écoulé avant le <br />prochain retour de cet instant<br /> que tu es en train de vivre :
-	</h2>
-	<br/>
-	<h3>~57x10^4946 jours</h3>
+		<div class="presentation">
+			<center>
+				<br>
+
+			<h2>Bienvenue sur le site officiel du Parti Nihiliste Français.</h2>
+			<br>
+			<br>
+			<h4 >Nous luttons depuis le début de la civilisation pour en venir à sa fin
+				<br>Depuis maintenant des générations, les penseurs, intellectuels, religieux, et tous les naïfs optimistes qui leur ressemblent, n'ont su se mettre d'accord sur rien si ce n'est qu'il ne fallait surtout pas "tomber" dans le nihilisme.
+				<br>
+				<br>Mais nous voyons aujourd'hui où cet optimisme béat nous mène, et oh comment il nous invite à nous voiler la face, à sourire quand il est temps de pleurer, à nous relever quand il est bien plutôt venu l'heure de sombrer.
+				<br>
+				<br>Voilà pourquoi nous avons décidé qu'il était de notre devoir de créer un parti qui relfèterait le réel, qui serait le seul parti représentant réellement ce que la population humaine est devenue. D'une espèce qui a su tantôt s'organiser afin de lutter ensemble pour un monde meilleur, nous voilà aujourd'hui une populace qui se complaît à défendre notre petit chez soi : le peu que nous avons, nous le garderons à tout prix.
+				<br>
+				<br>Voici venu le temps du parti qui représentera ce que nous sommes.
+				<br>
+				<br>C'est la fin d'une ère, oui, mais il n'est point de raison de pleurer. Célébrons tout ce que nous avons pu accomplir, et attendons patiemment le néant qui nous attend.
+			</h4>
+			<br>
+
+		</center>
+		</div>
+		<br>
+		<center>
+		<div>
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<iframe width="854" height="480" src="https://www.youtube.com/embed/3SwQHIBNI90">
+			</iframe>
+		</div></center>
+
 	</center>
 
 </section>
@@ -45,6 +53,12 @@
 
 
 <style>
+
+	.presentation{
+		background-color: blue;
+		min-width: 100%;
+	}
+
 	section {
 		display: flex;
 		flex-direction: column;
@@ -55,6 +69,10 @@
 
 	h1 {
 		width: 100%;
+	}
+
+	h4 {
+		color: white;
 	}
 
 	.welcome {

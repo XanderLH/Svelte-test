@@ -2,7 +2,6 @@
 	import { page } from '$app/stores';
 	import github from '$lib/images/github.svg';
 	import pnf from '$lib/images/PNF.png';
-
 </script>
 
 <header>
@@ -24,13 +23,13 @@
 				<a href="/about" style="color:lemonchiffon;">Ta bêtise</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle" style="color: lemonchiffon;">Notre joie</a>
+				<a href="/sverdle" style="color: lemonchiffon;">Quiz</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/donate' ? 'page' : undefined}>
-				<a href="/donate" style="color: lemonchiffon;">Dons</a>
+				<a href="/donate" style="color: lemonchiffon;">Faites un don !</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/demo' ? 'page' : undefined}>
-				<a href="/demo" style="color: lemonchiffon;">Terreur existentielle</a>
+				<a href="/demo" style="color: lemonchiffon;">Notre Joie</a>
 			</li>
 
 			
