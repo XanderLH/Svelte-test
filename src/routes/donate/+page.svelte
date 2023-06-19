@@ -99,9 +99,9 @@
   justify-content: center;
   align-items: center;
   position:absolute;
-  right: 500px;
+  right: 450px;
   top: 350px;
-  width: 200px;
+  width: 300px;
 }
 
 .container2 {
@@ -129,6 +129,8 @@ h7 {
     font:700;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(21, 5, 36);
+    position: relative;
+    top: -50px;
 }
 
 h8 {
