@@ -11,7 +11,7 @@
 
     let name
     let email
-    let score = 16
+    let score = 5
     let personality
     let resume
     let photo
