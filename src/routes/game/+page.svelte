@@ -1,5 +1,5 @@
 <script>
-	import pnf from '$lib/images/PNF.png';
+	import thomas from '$lib/images/Thomas.png';
     import buddha from '$lib/images/Bouddha.jpg';
     import cesar from '$lib/images/cesar.jpg';
     import macron from '$lib/images/macron.jpg';
@@ -11,7 +11,7 @@
 
     let name
     let email
-    let score = 0
+    let score = 16
     let personality
     let resume
     let photo
@@ -60,16 +60,11 @@ if (score>18) {
 </script>
 
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <title>Range Input</title>
-  </head>
+
   <body>
     <section id="overlay">
         <center>
-      <img src="src\lib\images\Thomas_Couture_003.jpg" alt="decadent" id="logo">
+      <img src={thomas} alt="decadent" id="logo">
     </center>
       <form>
         <h1>Quel décadent êtes-vous?</h1>
