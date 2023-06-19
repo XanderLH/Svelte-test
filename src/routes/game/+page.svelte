@@ -1,5 +1,5 @@
 <script>
-	import thomas from '$lib/images/Thomas.png';
+	import thomas from '$lib/images/Thomas.jpg';
     import buddha from '$lib/images/Bouddha.jpg';
     import cesar from '$lib/images/cesar.jpg';
     import macron from '$lib/images/macron.jpg';
@@ -11,15 +11,17 @@
 
     let name
     let email
-    let score = 5
+    let score
     let personality
     let resume
     let photo
-    //function UpdateAnswer() {
-        //score = document.querySelector(input[name="q1"]);
-        //console.log(score)
-    //}
-if (score>18) {
+    personality = ""
+    photo = ""
+    resume = ""
+    function UpdateAnswer() {
+        let jimmy = document.getElementById("mdp").value
+        score = Number(jimmy)
+        if (score>18) {
     personality = "Tu es Friedrich Nietzsche !"
     photo = nietzsche
     resume = "La décadence et le nihilisme est le plus grand ennemi de l'humanité, tu le sais bien, et ton plus grand ennemi est toi-même !"
@@ -56,6 +58,13 @@ if (score>18) {
     photo = ""
     resume = ""
 }
+    }
+
+    //function UpdateAnswer() {
+        //score = document.querySelector(input[name="q1"]);
+        //console.log(score)
+    //}
+
 
 </script>
 
@@ -172,6 +181,13 @@ if (score>18) {
   </section>
 <br>
 <br>
+<section>
+    <label for="mdp">
+        <input type="number" id="mdp" name="mdp" step='1'>
+    </label>
+</section>
+<br>
+<br>
 
 <section class='submission'>
             <input type="submit" id="bt" value="Save data to file" on:click={UpdateAnswer}>
@@ -226,6 +242,10 @@ if (score>18) {
     .description {
         color: aliceblue;
         background-color: rgb(149, 149, 149);
+    }
+
+    #mdp {
+        color:black;
     }
 
 </style>
