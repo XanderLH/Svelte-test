@@ -20,7 +20,7 @@
 				<a href="/" style="color: lemonchiffon;">Accueil</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about" style="color:lemonchiffon;">Ta bêtise</a>
+				<a href="/about" style="color:lemonchiffon;">Un mot</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/game' ? 'page' : undefined}>
 				<a href="/game" style="color: lemonchiffon;">Quiz</a>

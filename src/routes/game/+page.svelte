@@ -72,7 +72,7 @@ if (score>18) {
       <img src="src\lib\images\Thomas_Couture_003.jpg" alt="decadent" id="logo">
     </center>
       <form>
-        <h1>Quel décadent êtes vous?</h1>
+        <h1>Quel décadent êtes-vous?</h1>
         <br>
         <br>
         <h2>Faîtes le test !</h2>
